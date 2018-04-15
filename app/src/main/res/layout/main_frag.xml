@@ -1,0 +1,157 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="10dp">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<RelativeLayout
+    android:id="@+id/toolbar"
+    android:layout_alignParentTop="true"
+    android:background="#EF113C"
+    android:layout_width="match_parent"
+    android:layout_height="50dp">
+    <ImageView
+        android:padding="15dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/back"/>
+
+</RelativeLayout>
+
+   <ImageView
+       android:scaleType="fitXY"
+        android:id="@+id/main_img"
+        android:layout_below="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        />
+
+    <TextView
+        android:layout_above="@+id/icon"
+        android:padding="10dp"
+        android:textColor="#fff"
+        android:background="#60000000"
+        android:id="@+id/main_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="fkvhdifvdfvidfvdfkvbdbvjdfbvhbvfvbdfhvbjvbjdbvjvjf vj jd vjd v" />
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/icon"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:layout_below="@+id/main_img"
+        android:contentDescription="@string/icon_image"
+        android:src="@drawable/wf"
+        android:layout_marginStart="10dp" />
+    <TextView
+        android:id="@+id/wfhead"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:layout_below="@id/main_img"
+        android:layout_toRightOf="@id/icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Wittyfeed"/>
+
+    <TextView
+        android:paddingTop="5dp"
+        android:paddingLeft="10dp"
+        android:layout_below="@id/wfhead"
+        android:layout_toRightOf="@id/icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date 15-04-2018"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:visibility="visible"
+        android:splitMotionEvents="false"
+        android:layout_below="@id/icon"
+        android:id="@+id/imageRV"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+    <com.example.abc.wittyfeed.StretchVideoView
+        android:visibility="visible"
+        android:layout_marginTop="10dp"
+        android:id="@+id/mainVdo"
+        android:layout_below="@+id/imageRV"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        />
+ <ImageView
+     android:focusable="true"
+     android:clickable="true"
+     android:background="#80000000"
+        android:visibility="visible"
+        android:layout_marginTop="10dp"
+        android:id="@+id/play"
+        android:layout_below="@+id/imageRV"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        />
+
+    <ImageView
+        android:id="@+id/play_btn"
+        android:layout_width="45dp"
+        android:layout_height="50dp"
+        android:layout_above="@+id/vdo_main_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="37dp"
+        android:src="@drawable/play" />
+
+    <TextView
+        android:layout_above="@+id/icon_vdo"
+        android:padding="10dp"
+        android:textColor="#fff"
+        android:background="#60000000"
+        android:id="@+id/vdo_main_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="fkvhdifvdfvidfvdfkvbdbvjdfbvhbvfvbdfhvbjvbjdbvjvjf vj jd vjd v" />
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/icon_vdo"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:layout_below="@+id/mainVdo"
+        android:contentDescription="@string/icon_image"
+        android:src="@drawable/wf"
+        android:layout_marginStart="10dp" />
+    <TextView
+        android:id="@+id/wfhead_vdo"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:layout_below="@id/mainVdo"
+        android:layout_toRightOf="@id/icon_vdo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Wittyfeed"/>
+
+    <TextView
+        android:paddingTop="5dp"
+        android:paddingLeft="10dp"
+        android:layout_below="@id/wfhead_vdo"
+        android:layout_toRightOf="@id/icon_vdo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date 15-04-2018"/>
+    
+    <android.support.v7.widget.RecyclerView
+        android:splitMotionEvents="false"
+        android:layout_below="@id/icon_vdo"
+        android:id="@+id/vdoRV"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</RelativeLayout>
+
+
+</ScrollView>
